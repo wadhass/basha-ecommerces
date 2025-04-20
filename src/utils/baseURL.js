@@ -1,3 +1,5 @@
 export const getBaseUrl = () => {
-    return "http://localhost:3030"
+    return "https://basha-ecommerce-backend.onrender.com"
 } 
+
+// "http://localhost:3030"

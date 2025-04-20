@@ -6,6 +6,7 @@ const authApi = createApi({
      baseUrl: `${getBaseUrl()}/api/auth`,
      credentials: 'include',   
     }),
+    tagTypes: ["User"],
     endpoints: (builder) => ({
         registerUser: builder.mutation({
             query: (newUser) => ({
@@ -20,6 +21,8 @@ const authApi = createApi({
                 method: "POST",
                 body: credentials,
             })
+             
+            
         }),
         logoutUser: builder.mutation({
             query: () => ({
@@ -44,7 +47,7 @@ const authApi = createApi({
        }),
        updateUserRole: builder.mutation({
         query: ({userId, role}) => ({
-            url: `/usera/${userId}`,
+            url: `/users/${userId}`,
             method: "PUT",
             body: {role},
         }),
