@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
-    console.log(user.user.role); // for debugging
+    console.log(user?.role); // for debugging
   };
 
   const handleLogout = async () => {
@@ -55,7 +55,7 @@ const Navbar = () => {
     { label: "Orders", path: "/dashboard/orders" },
   ];
 
-  const dropdownMenus = user.user.role === "admin" ? adminDropDownmenus : userDropDownmenus;
+  const dropdownMenus = user?.role === "admin" ? adminDropDownmenus : userDropDownmenus;
 
   return (
     <header className="fixed-nav-bar w-nav">
