@@ -7,6 +7,7 @@ import DealsSection from './DealsSection'
 import PromoBanner from './PromoBanner'
 import Blogs from '../blogs/Blogs'
 
+
 const Home = () => {
   return (
     <>

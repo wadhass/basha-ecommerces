@@ -7,6 +7,8 @@ import ShopPage from "../pages/shop/ShopPage";
 import SingleProduct from "../pages/shop/productDetails/SingleProduct";
 import Login from "../components/Login";
 import Register from "../components/Register";
+import About from "../pages/home/About";
+import ContactPage from "../pages/home/ContactPage";
 
 
   const router = createBrowserRouter([
@@ -17,7 +19,9 @@ import Register from "../components/Register";
           {path: "/", element: <Home />},
           {path: "/categories/:categoryName", element: <CategoryPage/>}, 
           {path: "/search", element: <Search />},
-          {path: "/shop", element: <ShopPage/>},  
+          {path: "/shop", element: <ShopPage/>}, 
+          {path: "/about", element:   <About/>}, 
+          {path: "/contact", element: <ContactPage/>},
           {path: "/shop/:id", element: <SingleProduct />}                     
       ]
     },
